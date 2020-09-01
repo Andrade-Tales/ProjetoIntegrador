@@ -6,8 +6,14 @@ Esse repositório se refere ao projeto trabalhado no curso de Desenvolvedor Full
 
 ## Integrantes do Grupo 👨‍💻
 
-- Bruno Stelzeneder
-- Joilton Fraga
-- Lucas Robert
-- Tales Andrade
-- Thiago Araujo
+- [Bruno Stelzeneder](https://github.com/Brunostelzeneder)
+- [Joilton Fraga](https://github.com/JoiltonFraga)
+- [Lucas Robert](https://github.com/lucasrobert103)
+- [Tales Andrade](https://github.com/Andrade-Tales)
+- [Thiago Araujo](https://github.com/Teethew)
+
+## Arquivos do Projeto
+
+- [Explicação do Banco de Dados (.docx)](https://github.com/Teethew/ProjetoIntegrador/blob/master/Projeto%20Integrador.docx)
+- [Diagrama Entidade Relacional do Banco de Dados (.pdf)](https://github.com/Teethew/ProjetoIntegrador/blob/master/Site-dbdesigner.pdf)
+- [Comandos para a criação do Banco no MySQL (.sql)](https://github.com/Teethew/ProjetoIntegrador/blob/master/Site_mysql_create.sql)
