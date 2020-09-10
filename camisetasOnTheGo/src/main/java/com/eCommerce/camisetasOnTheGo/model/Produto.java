@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -21,10 +22,11 @@ public class Produto {
 	private String tamanho;
 	
 	@NotNull
+	@Digits(fraction = 2, integer = 4)
 	private double preco;
 	
 	@NotNull
-	@Size(min = 0, max = 1000)
+	@Size(min = 1, max = 5)
 	private int quantidade;
 	
 	@NotNull
@@ -35,9 +37,8 @@ public class Produto {
 	@Size(min = 2, max = 15)
 	private String cor;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id_categoria;
+	
+	//private int id_categoria;
 
 	
 	public int getId() {
@@ -88,13 +89,13 @@ public class Produto {
 		this.cor = cor;
 	}
 
-	public int getId_categoria() {
+	/*public int getId_categoria() {
 		return id_categoria;
 	}
 
 	public void setId_categoria(int id_categoria) {
 		this.id_categoria = id_categoria;
-	}
+	}*/
 	
 	
 
