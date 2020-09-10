@@ -25,7 +25,7 @@ public class Cliente {
 	private String email;
 	
 	@NotNull
-	@Size
+	@Size (min = 5, max = 20)
 	private String senha;
 	
 	
