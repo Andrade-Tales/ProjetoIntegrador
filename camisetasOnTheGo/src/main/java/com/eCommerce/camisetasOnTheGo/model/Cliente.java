@@ -9,12 +9,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "tb_cliente")
+@Table(name = "cliente")
 public class Cliente {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id_cliente;
+	private long id_cliente;
 	
 	@NotNull
 	@Size(min = 3, max = 100)
@@ -30,11 +30,11 @@ public class Cliente {
 	
 	
 	
-	public String getId_cliente() {
+	public long getId_cliente() {
 		return id_cliente;
 	}
 
-	public void setId_cliente(String id_cliente) {
+	public void setId_cliente(long id_cliente) {
 		this.id_cliente = id_cliente;
 	}
 

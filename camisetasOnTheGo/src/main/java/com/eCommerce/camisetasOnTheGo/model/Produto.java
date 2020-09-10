@@ -4,21 +4,24 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
-@Table(name = "tb_produto")
+@Table(name = "produto")
 public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private long id;
 	
 	@NotNull
-	@Size(max = 1)
+	@Size(max = 2)
 	private String tamanho;
 	
 	@NotNull
@@ -26,7 +29,6 @@ public class Produto {
 	private double preco;
 	
 	@NotNull
-	@Size(min = 1, max = 5)
 	private int quantidade;
 	
 	@NotNull
@@ -37,15 +39,15 @@ public class Produto {
 	@Size(min = 2, max = 15)
 	private String cor;
 	
-	
-	//private int id_categoria;
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Categoria categoria;
 
-	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -89,13 +91,13 @@ public class Produto {
 		this.cor = cor;
 	}
 
-	/*public int getId_categoria() {
-		return id_categoria;
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
-	public void setId_categoria(int id_categoria) {
-		this.id_categoria = id_categoria;
-	}*/
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
 	
 	
 
