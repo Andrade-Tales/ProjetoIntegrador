@@ -1,0 +1,16 @@
+com\eCommerce\camisetasOnTheGo\repository\ProdutoRepository.class
+com\eCommerce\camisetasOnTheGo\model\Categoria.class
+com\eCommerce\camisetasOnTheGo\controller\ProdutoController.class
+com\eCommerce\camisetasOnTheGo\model\Produto.class
+com\eCommerce\camisetasOnTheGo\model\Usuario.class
+com\eCommerce\camisetasOnTheGo\seguranca\UserDetailsImpl.class
+com\eCommerce\camisetasOnTheGo\seguranca\UserDetailsServiceImpl.class
+com\eCommerce\camisetasOnTheGo\service\UsuarioService.class
+com\eCommerce\camisetasOnTheGo\controller\UsuarioController.class
+com\eCommerce\camisetasOnTheGo\model\UserLogin.class
+com\eCommerce\camisetasOnTheGo\CamisetasOnTheGoApplication.class
+com\eCommerce\camisetasOnTheGo\config\SwaggerConfig.class
+com\eCommerce\camisetasOnTheGo\controller\CategoriaController.class
+com\eCommerce\camisetasOnTheGo\repository\UsuarioRepository.class
+com\eCommerce\camisetasOnTheGo\seguranca\BasicSecurityConfig.class
+com\eCommerce\camisetasOnTheGo\repository\CategoriaRepository.class
