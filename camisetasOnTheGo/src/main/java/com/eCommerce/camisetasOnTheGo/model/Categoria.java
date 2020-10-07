@@ -14,6 +14,10 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * @author Thiago
+ *
+ */
 @Entity
 @Table(name = "categoria")
 public class Categoria {
@@ -23,14 +27,18 @@ public class Categoria {
 	private long id;
 	
 	@NotNull
+	@Size(min = 3, max = 100)
+	private String descricao;
+	
+	//@NotNull
 	@Size(min = 5, max = 50)
 	private String tema;
 	
-	@NotNull
+	//@NotNull
 	@Size(min = 1, max = 20)
 	private String genero;
 	
-	@NotNull
+	//@NotNull
 	@Size(min = 2, max = 15)
 	private String manga;
 	
@@ -77,6 +85,16 @@ public class Categoria {
 	public void setManga(String manga) {
 		this.manga = manga;
 	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	
 	
 	
 }

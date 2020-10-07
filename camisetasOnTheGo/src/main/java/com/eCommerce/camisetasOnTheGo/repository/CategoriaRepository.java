@@ -8,4 +8,5 @@ import com.eCommerce.camisetasOnTheGo.model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 	public List<Categoria> findAllByTemaContainingIgnoreCase (String tema);
+	public List<Categoria> findAllByDescricaoContainingIgnoreCase (String descricao);
 }

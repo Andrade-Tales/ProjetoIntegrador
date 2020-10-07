@@ -31,17 +31,36 @@ public class Produto {
 	@NotNull
 	private int quantidade;
 	
+	@Size(min = 5, max = 500)
+	private String linkImagem;
+	
 	@NotNull
 	@Size(min = 2, max = 500)
 	private String instituicao;
 	
 	@NotNull
-	@Size(min = 2, max = 15)
-	private String cor;
+	@Size(min = 2, max = 255)
+	private String nome;
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
+
+	public String getLinkImagem() {
+		return linkImagem;
+	}
+
+	public void setLinkImagem(String linkImagem) {
+		this.linkImagem = linkImagem;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
 	public long getId() {
 		return id;
@@ -81,14 +100,6 @@ public class Produto {
 
 	public void setInstituicao(String instituicao) {
 		this.instituicao = instituicao;
-	}
-
-	public String getCor() {
-		return cor;
-	}
-
-	public void setCor(String cor) {
-		this.cor = cor;
 	}
 
 	public Categoria getCategoria() {
